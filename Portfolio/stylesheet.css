@@ -1,7 +1,7 @@
 header {
     font-family: 'Garamond', 'Times New Roman';
     /* SAVE IMAGE AND PUT IN SEP FILE- NO LINK , ALSO HOW TO MAKE BG IMAGE LARGER*/
-    background-image: url(http://2.bp.blogspot.com/-SXQEyR4d-VM/UcCPYHiA8DI/AAAAAAAACT0/uT0AVssh8gA/s1600/IMG_1938.JPG);
+    background-image: url('images/backgroundimage.JPG');
 }
 
 #logo {
