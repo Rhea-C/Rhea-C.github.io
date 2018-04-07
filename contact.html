@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="images/giraffe1.png">
+	<title> Rhea Cheeti </title>
+</head>
+
+<body>
+	<div id="all">
+		<header>
+			<h1> Rhea Cheeti </h1>
+			<h2> Online Portfolio </h2>
+
+			<div id="navigation">
+				<ul class = "nav">
+  					<li><a href="index.html">Home</a></li>
+  					<li><a href="about.html">About</a></li>
+  					<li><a href="projects.html">Projects</a></li>
+  					<li><a class= 'active' href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class = 'main'>
+			<h2> Find me! </h2>
+			<div id = 'map'>
+				<script>
+      				function initMap() {
+        				var uluru = {lat: 42.281039, lng: -83.740102};
+        				var map = new google.maps.Map(document.getElementById('map'), {
+          				zoom: 15,
+          				center: uluru
+        			});
+        			initMap.alt = 'Google Map Depicting North Quad'
+        			var marker = new google.maps.Marker({
+          			position: uluru,
+          			map: map
+        			});
+      			}
+
+    			</script>
+    			<script async defer
+    				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzOMwaZLoom-MPKMC81yP08hy4s2k_FSA&callback=initMap">
+    			</script>
+
+			</div>
+
+			<div id=email>
+				<h3> <a href="mailto:rcheeti@umich.edu?Subject=From%20your%20website" target="_top" >Click here to send me an email! </a> </h3>
+
+			</div>
+
+		</div>
+
+		<footer>
+			<p> Rhea Cheeti © 2018 </p>
+			<div class = "social">
+				<ul>
+					<li><a href="https://twitter.com/rheacheeti"> <img src='images/twitter.png' alt = "twitter logo" /></a></li>
+					<li><a href="https://www.linkedin.com/in/rheacheeti"> <img src='images/linkedin.png' alt = "LinkedIn logo" /></a></li>
+					<li><a href="https://www.instagram.com/rheacheeti"> <img src='images/instagram.png' alt = "Instagram logo" /></a></li>
+				</ul>
+			</div>
+		</footer>	
+	</div>
+</body>
+
+</html>	
