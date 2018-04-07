@@ -15,10 +15,11 @@ header {
 }
 
 h1 {
-    color: #E1AD9D;
+    color: #8c3920;
     font-size: 55px;
     text-align: center;
 }
+
 
 h2 {
     /*color: #696969;*/
@@ -28,7 +29,7 @@ h2 {
 }
 
 h3 {
-    color: #E1AD9D;
+    color: #8c3920;
     font-size: 30px;
     font-family: 'Courier New';
 }
@@ -47,6 +48,10 @@ h3 {
     width: 100%;
     position: fixed;
     top: 0;
+}
+
+header h1 {
+    color: #E1AD9D;
 }
 
 .nav li {
