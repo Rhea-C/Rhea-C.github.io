@@ -15,35 +15,43 @@
 
 			<div id="navigation">
 				<ul class = "nav">
-					<li ><a class= 'active' href="index.html">Home</a></li>
+  					<li><a href="index.html">Home</a></li>
   					<li><a href="about.html">About</a></li>
   					<li><a href="projects.html">Projects</a></li>
-  					<li><a href="contact.html">Contact</a></li>
+  					<li><a class= 'active' href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</header>
 
-		<div class = 'content'>
-			<div class = 'pictures' id='pics1'>
-				<img src="images/sunset_trees.jpg" alt="Sunset and trees">
-				<img src="images/sunset.jpg" alt="Sunset">
-				<img src="images/pup.jpg" alt="Pup">
-				<img src="images/polaroids.jpg" alt="Polaroids">
-				<img src="images/sunlit_trees.jpg" alt="Sunset trees">
+		<div class = 'main'>
+			<h2> Find me! </h2>
+			<div id = 'map'>
+				<script>
+      				function initMap() {
+        				var uluru = {lat: 42.281039, lng: -83.740102};
+        				var map = new google.maps.Map(document.getElementById('map'), {
+          				zoom: 15,
+          				center: uluru
+        			});
+        			var marker = new google.maps.Marker({
+          			position: uluru,
+          			map: map
+        			});
+      			}
+    			</script>
+    			<script async defer
+    				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzOMwaZLoom-MPKMC81yP08hy4s2k_FSA&callback=initMap">
+    			</script>
+
 			</div>
 
-			<div id= 'main_content'>
-				<h2> WRITING. PHOTOGRAPHY. CODING. ART. MUSIC. </h2>
+			<div id=email>
+				<h3> <a href="mailto:rcheeti@umich.edu?Subject=From%20your%20website" target="_top" >Click here to send me an email! </a> </h3>
 
-			<div class = 'pictures' id='pics2'>
-				<img src="images/sunflowers.jpg" alt="Sunflowers">
-				<img src="images/camel.jpg" alt="Camel!">
-				<img src="images/trees.jpg" alt="Trees">
-				<img src="images/graffiti.jpg" alt="Graffiti">
-				<img src="images/ocean.jpg" alt="Ocean">
 			</div>
 
 		</div>
+
 		<footer>
 			<p> Rhea Cheeti © 2018 </p>
 			<div class = "social">
@@ -56,4 +64,5 @@
 		</footer>	
 	</div>
 </body>
+
 </html>	
