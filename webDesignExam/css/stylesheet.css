@@ -17,3 +17,7 @@
     overflow: hidden;
 }
 
+
+.hidden { visibility: hidden; }
+
+.unhidden { visibility: visible; } 

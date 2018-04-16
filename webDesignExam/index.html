@@ -12,12 +12,29 @@
 	</header>
 
 	<div class = "content">
-		<script>
-			function pic1() {
-				document.getElementById('picture1')
+		<script type = 'text/javascript'>
+			function hide() {
+				var x = document.getElementById("picture1");
+				var z = document.getElementById("picture2");
+				if (x.style.visibility === "visibile") {
+        			x.style.visibility = "hidden";
+    			} else {
+        			x.style.visibility = "hidden";
+    			}
+
+			}
+
+			function show() {
+				var y = document.getElementById("picture1");
+				if (x.style.visibility === "hidden") {
+					x.style.visibility = "visible";
+				} else {
+					x.style.visibility = "visible";
+				}
+
 			}
 		</script>
-		<div class = "pictures" id = "picture1">
+		<div class = "pictures" id = "picture1" class = "unhidden">
 			<img class = "p" id = "p1" src="images/examPic.JPG" alt="exam pic">
 		</div>
 
@@ -28,8 +45,8 @@
 	</div>
 
 	<div class = "rest"> 
-		<button type="button">Hide Image</button>
-		<button type="button">Show Image</button>
+		<button onclick="hide()" > Hide Image</button></a>
+		<button onclick="show()" > Show Image</button>
 	</div>
 
 	<footer>
