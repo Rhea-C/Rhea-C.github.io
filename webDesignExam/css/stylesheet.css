@@ -1,0 +1,19 @@
+.content {
+    display:table;
+    width:100%;
+}
+
+.pictures {
+    display:table-cell;
+    text-align:center;
+    width: 50%;
+}
+
+.pictures img {
+	width: 90%;
+	border: 5px solid blue;
+	padding: 5%;
+    display: block;
+    overflow: hidden;
+}
+
